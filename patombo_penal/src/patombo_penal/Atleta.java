@@ -13,6 +13,7 @@ public abstract class Atleta {
 	public void setNome() {
 		System.out.println("Entre com o nome:");
 		this.nome = ler.nextLine();
+		Menus_mensagens.limpaBuffer(ler);
 	}
 	public int getHabilidade() {
 		return habilidade;

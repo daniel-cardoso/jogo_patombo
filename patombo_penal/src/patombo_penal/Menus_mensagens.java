@@ -1,6 +1,9 @@
 package patombo_penal;
 
+import java.util.Scanner;
+
 public class Menus_mensagens {
+	Scanner name = new Scanner(System.in);
 	
 	public static void logo() {
 		System.out.println(" _______________________________\r\n" + 
@@ -51,4 +54,12 @@ public class Menus_mensagens {
 				"|   |   |   |\r\n" + 
 				"");
 	}
+	
+	public static void limpaBuffer(Scanner scanner) 
+	{
+        if (scanner.hasNextLine()) 
+        {
+            scanner.nextLine();
+        }
+    }
 }

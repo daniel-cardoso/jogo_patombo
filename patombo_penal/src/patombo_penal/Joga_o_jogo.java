@@ -1,9 +1,11 @@
 package patombo_penal;
 
+
 public class Joga_o_jogo {
 
 	public static void main(String[] args) {
 		int esc=-1;
+		
 		Menus_mensagens.logo();
 		
 		//Menus_mensagens.limpaTela();
@@ -30,17 +32,16 @@ public class Joga_o_jogo {
 		
 		//PARTIU BATIDA 
 		System.out.println("#PARTIU BATIDA, MEU CONSAGRADO!");
+		//while a partir daqui
 		System.out.println("Vamos definir agora em qual local deseja mirar seu chute");
 		
 		Menus_mensagens.mostraGol();
-		
-		
 		
 		if(joga10.getHabilidade()>golero1.getHabilidade())
 		{
 			batida1.escolheLocal();
 		}
-		
+		//fim while
 	}
 
 }
