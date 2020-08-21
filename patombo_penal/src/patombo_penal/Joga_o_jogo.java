@@ -39,7 +39,7 @@ public class Joga_o_jogo {
 		
 		if(joga10.getHabilidade()>golero1.getHabilidade())
 		{
-			batida1.escolheLocal();
+			batida1.escolheLocal(joga10.getHabilidade());
 		}
 		//fim while
 	}

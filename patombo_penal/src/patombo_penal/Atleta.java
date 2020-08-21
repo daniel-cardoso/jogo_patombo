@@ -13,7 +13,6 @@ public abstract class Atleta {
 	public void setNome() {
 		System.out.println("Entre com o nome:");
 		this.nome = ler.nextLine();
-		Menus_mensagens.limpaBuffer(ler);
 	}
 	public int getHabilidade() {
 		return habilidade;
@@ -23,5 +22,7 @@ public abstract class Atleta {
 		this.habilidade = aleatorio;
 	}
 	
-	
+	public void setHabilidade2(int a) {
+		this.habilidade = a;
+	}
 }
