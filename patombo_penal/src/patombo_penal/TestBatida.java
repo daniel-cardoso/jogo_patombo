@@ -6,7 +6,7 @@ public class TestBatida {
 		
 		Batida novabatida = new Batida(1);
 		
-		novabatida.escolheLocal();
+		//novabatida.escolheLocal();
 		
 	}
 

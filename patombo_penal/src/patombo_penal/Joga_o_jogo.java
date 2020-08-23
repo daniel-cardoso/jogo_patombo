@@ -30,15 +30,15 @@ public class Joga_o_jogo {
 		System.out.println(golero1.getNome());
 		System.out.println(golero1.getHabilidade());
 		
-		//PARTIU BATIDA 
-		System.out.println("#PARTIU BATIDA, MEU CONSAGRADO!");
+		
 		//while a partir daqui
-		System.out.println("Vamos definir agora em qual local deseja mirar seu chute");
 		
-		Menus_mensagens.mostraGol();
-		
-		if(joga10.getHabilidade()>golero1.getHabilidade())
+		if(joga10.getHabilidade()>=golero1.getHabilidade())
 		{
+			//PARTIU BATIDA 
+			System.out.println("#PARTIU BATIDA, MEU CONSAGRADO!");
+			System.out.println("Vamos definir agora em qual local deseja mirar seu chute");
+			Menus_mensagens.mostraGol();
 			batida1.escolheLocal(joga10.getHabilidade());
 		}
 		//fim while

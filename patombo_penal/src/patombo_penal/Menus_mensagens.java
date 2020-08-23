@@ -47,10 +47,10 @@ public class Menus_mensagens {
 	public static void mostraGol()
 	{
 		System.out.println("_____________\r\n" + 
-				"| 1 | 2 | 3 | ALTO\r\n" + 
+				"| 1 | 2 | 3 | ALTO(8)\r\n" + 
 				"|   |   |   |\r\n" + 
 				"-------------\r\n" + 
-				"| 1 | 2 | 3 | BAIXO\r\n" + 
+				"| 1 | 2 | 3 | BAIXO(2)\r\n" + 
 				"|   |   |   |\r\n" + 
 				"");
 	}

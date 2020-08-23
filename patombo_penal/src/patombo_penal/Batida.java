@@ -26,60 +26,63 @@ public class Batida extends Jogador {
 	}
 
 	public void escolheLocal(int habilidade) {
-		System.out.println("No alto ou em baixo?");
+		System.out.println("No alto ou em baixo?\n(utilize os números 8 ou 2");
 		local = ler.nextInt();
 
 		switch (local) {
 		case 8:
 			System.out.println("Esquerda, meio ou direita?" + "\n(utilize os números 1, 2 ou 3)");
 			resp = ler.nextInt();
-			//super.setHabilidade();
-			//super.setHabilidade2(9);
-			System.out.println(super.getHabilidade());
 
 			if (resp == 1) {
-				 if(habilidade > 0) 
-				 {
-				System.out.println("GOOOOOOOOOL");
-				 }
+				if (habilidade > 4) {
+					System.out.println("GOOOOOOOOOL");
+				}
+			} else if (resp == 2) {
+				if (habilidade > 4) {
+					System.out.println("GOOOOOOOOOL");
+				}
+			} else if (resp == 3) {
+				if (habilidade > 4) {
+					System.out.println("GOOOOOOOOOL");
+				}
 			}
-			// else if(resp == 2)
-			// {
-			// if(super.getTipo()== 1 && super.getHabilidade()>3)
-			// {
-			// System.out.println("GOOOOOOOOOL");
-			// }
-			// }
-			// else if(resp == 3)
-			// {
-			// if(super.getTipo()== 1 && super.getHabilidade()>4)
-			// {
-			// System.out.println("GOOOOOOOOOL");
-			// }
-			// }
 
 			break;
 
-		// case 2:
-		// System.out.println("Esquerda, meio ou direita?" + "\n(utilize os números 1, 2
-		// ou 3)");
-		// resp = ler.nextInt();
-		// if (resp == 1) {
-		// if (super.getTipo() == 1 && super.getHabilidade() > 4) {
-		// System.out.println("GOOOOOOOOOL");
-		// }
-		// } else if (resp == 2) {
-		// if (super.getTipo() == 1 && super.getHabilidade() > 3) {
-		// System.out.println("GOOOOOOOOOL");
-		// }
-		// } else if (resp == 3) {
-		// if (super.getTipo() == 1 && super.getHabilidade() > 4) {
-		// System.out.println("GOOOOOOOOOL");
-		// }
-		// }
-		// break;
-		// default:
-		// break;
+		case 2:
+			System.out.println("Esquerda, meio ou direita?" + "\n(utilize os números 1, 2 ou 3)");
+			resp = ler.nextInt();
+
+			if (resp == 1) 
+			{
+				if (habilidade > 4) 
+				{
+					System.out.println("GOOOOOOOOOL");
+				}
+			} 
+			else if (resp == 2) 
+			{
+				if (habilidade > 4) 
+				{
+					System.out.println("GOOOOOOOOOL");
+				}
+			} 
+			else if (resp == 3) 
+			{
+				if (habilidade > 4) 
+				{
+					System.out.println("GOOOOOOOOOL");
+				}
+			}
+			
+			break;
+		 
+		default:
+			System.out.println("Ainda não temos outros parâmetros,"
+					+ " seja paciente pequeno gafanhoto...  ");
+			 
+			 break;
 		}
 
 	}
