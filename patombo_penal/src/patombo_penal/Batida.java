@@ -26,7 +26,7 @@ public class Batida extends Jogador {
 	}
 
 	public void escolheLocal(int habilidade) {
-		System.out.println("No alto ou em baixo?\n(utilize os números 8 ou 2");
+		System.out.println("No alto ou em baixo?\n(utilize os números 8 ou 2)");
 		local = ler.nextInt();
 
 		switch (local) {
